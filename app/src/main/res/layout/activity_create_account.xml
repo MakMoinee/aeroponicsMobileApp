@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPlant"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/plant" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/imgPlant"
+                android:fontFamily="@font/wildwood"
+                android:text="Aeroponics\nApp"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgPlant"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/teal_700"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/lblCreate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create Your Account"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lblCreate"
+                        android:layout_marginTop="20dp"
+                        android:hint="Username"
+                        android:textColorHint="@android:color/black"
+                        app:startIconDrawable="@drawable/ic_business">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutUsername"
+                        android:layout_marginTop="20dp"
+                        android:hint="Password"
+                        android:textColorHint="@android:color/black"
+                        app:endIconCheckable="true"
+                        app:endIconDrawable="@drawable/ic_show_pass"
+                        app:passwordToggleDrawable="@drawable/ic_hide_pass"
+                        app:passwordToggleEnabled="true"
+                        app:startIconDrawable="@drawable/ic_lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutConfirmPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutPassword"
+                        android:layout_marginTop="20dp"
+                        android:hint="Confirm Password"
+                        android:textColorHint="@android:color/black"
+                        app:endIconCheckable="true"
+                        app:endIconDrawable="@drawable/ic_show_pass"
+                        app:passwordToggleDrawable="@drawable/ic_hide_pass"
+                        app:passwordToggleEnabled="true"
+                        app:startIconDrawable="@drawable/ic_lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/lblAdditional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutConfirmPass"
+                        android:layout_marginTop="20dp"
+                        android:text="Additional Information"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardAdditionalInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lblAdditional"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/teal_700"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layoutFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="First Name"
+                                android:textColorHint="@android:color/black">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editFN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="15sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layoutMiddleName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layoutFirstName"
+                                android:layout_marginTop="20dp"
+                                android:hint="Middle Name"
+                                android:textColorHint="@android:color/black">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editMiddleName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:textColor="@android:color/black" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layoutLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layoutMiddleName"
+                                android:layout_marginTop="20dp"
+                                android:hint="Last Name"
+                                android:textColorHint="@android:color/black">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editLastName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:textColor="@android:color/black" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/layoutDatePick"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/layoutLastName"
+                                android:layout_marginTop="20dp"
+                                android:hint="Birth Date"
+                                android:textColorHint="@android:color/black"
+                                app:endIconCheckable="true"
+                                app:endIconDrawable="@drawable/ic_calendar"
+                                app:endIconMode="custom">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editBirthDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:inputType="date"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:textColor="@android:color/black" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btnCreateAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardAdditionalInfo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Create Account" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
