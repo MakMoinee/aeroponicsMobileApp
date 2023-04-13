@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.aeroponics.user.activities.databinding.FragmentSlideshowBinding;
+import com.aeroponics.user.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {
 
