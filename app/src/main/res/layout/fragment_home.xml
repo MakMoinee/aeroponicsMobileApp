@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.home.HomeFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="25dp"
+           android:layout_marginTop="40dp"
+           android:layout_marginRight="25dp"
+           app:cardBackgroundColor="@android:color/white"
+           app:cardCornerRadius="15dp"
+           app:cardElevation="10dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="16dp">
+
+               <ImageView
+                   android:id="@+id/imgLogo"
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:src="@drawable/plogo" />
+
+           </RelativeLayout>
+       </androidx.cardview.widget.CardView>
+
+       <ImageView
+           android:scaleType="fitXY"
+           android:src="@drawable/wave"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"/>
+   </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.aeroponics.user.R;
 import com.aeroponics.user.databinding.ActivityLoginBinding;
 import com.aeroponics.user.impl.ButtonImpl;
+import com.aeroponics.user.interfaces.ActivityListener;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,7 +29,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnLogin:
-                ButtonImpl.handleLogin(LoginActivity.this, binding.editUsername.getText().toString(), binding.editPW.getText().toString());
+                ButtonImpl.handleLogin(LoginActivity.this, binding.editUsername.getText().toString(), binding.editPW.getText().toString(), new ActivityListener() {
+                    @Override
+                    public void finishActivity() {
+                        finish();
+                    }
+                });
                 break;
             case R.id.txtCreateAccount:
                 ButtonImpl.handleCreateAccount(LoginActivity.this);

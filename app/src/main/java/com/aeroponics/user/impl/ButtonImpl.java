@@ -9,13 +9,19 @@ import android.widget.Toast;
 import androidx.fragment.app.FragmentManager;
 
 import com.aeroponics.user.activities.CreateAccountActivity;
+import com.aeroponics.user.activities.MainFormActivity;
 import com.aeroponics.user.fragment.DatePickerFragment;
+import com.aeroponics.user.interfaces.ActivityListener;
 import com.aeroponics.user.interfaces.ButtonsListener;
 
 public class ButtonImpl {
-    public static void handleLogin(Context mContext, String userName, String password) {
+    public static void handleLogin(Context mContext, String userName, String password, ActivityListener listener) {
         if (userName.equals("") || password.equals("")) {
             Toast.makeText(mContext, "Please Don't Leave Empty Fields", Toast.LENGTH_SHORT).show();
+        }else{
+            Intent intent = new Intent(mContext, MainFormActivity.class);
+            mContext.startActivity(intent);
+            listener.finishActivity();
         }
     }
 

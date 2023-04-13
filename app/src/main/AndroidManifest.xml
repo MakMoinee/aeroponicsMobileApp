@@ -15,6 +15,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".activities.MainFormActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_form"
+            android:theme="@style/Theme.AeroponicsMobileApp.NoActionBar" />
+        <activity
             android:name=".activities.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AeroponicsMobileApp.NoActionBar">
@@ -24,7 +29,6 @@
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".activities.LoginActivity"
