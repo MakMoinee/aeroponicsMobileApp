@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (users != null) {
             if (!users.getDocumentID().equals("")) {
                 Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, MainFormActivity.class);
+                Intent intent = new Intent(LoginActivity.this, SplashActivity.class);
                 startActivity(intent);
                 finish();
             }

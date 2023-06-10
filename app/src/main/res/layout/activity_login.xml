@@ -62,8 +62,6 @@
                     android:layout_marginTop="20dp"
                     android:hint="Password"
                     android:textColorHint="@android:color/black"
-                    app:endIconDrawable="@drawable/ic_show_pass"
-                    app:passwordToggleDrawable="@drawable/ic_hide_pass"
                     app:passwordToggleEnabled="true"
                     app:startIconDrawable="@drawable/ic_lock">
 
