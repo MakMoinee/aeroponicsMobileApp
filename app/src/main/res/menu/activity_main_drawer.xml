@@ -9,6 +9,14 @@
             android:icon="@drawable/ic_home_btn"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_plants"
+            android:icon="@drawable/plants"
+            android:title="Plants" />
+        <item
+            android:id="@+id/nav_devices"
+            android:icon="@drawable/devices"
+            android:title="Devices" />
+        <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_logout"
             android:title="@string/menu_logout" />

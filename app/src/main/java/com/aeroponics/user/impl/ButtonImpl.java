@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.fragment.app.FragmentManager;
 
 import com.aeroponics.user.activities.CreateAccountActivity;
+import com.aeroponics.user.activities.GoogleSigninActivity;
 import com.aeroponics.user.activities.MainFormActivity;
 import com.aeroponics.user.fragment.DatePickerFragment;
 import com.aeroponics.user.interfaces.ActivityListener;
@@ -33,5 +34,10 @@ public class ButtonImpl {
     public static void handleDatePicker(FragmentManager fm, DatePickerDialog.OnDateSetListener dateListener) {
         DatePickerFragment datePickerFragment = new DatePickerFragment(dateListener);
         datePickerFragment.show(fm, "DATE_PICK");
+    }
+
+    public static void handleGoogleSignin(Context mContext){
+        Intent intent = new Intent(mContext, GoogleSigninActivity.class);
+        mContext.startActivity(intent);
     }
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "655421562098",
+    "project_id": "aeroponics-be5c4",
+    "storage_bucket": "aeroponics-be5c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655421562098:android:7011830e3b734d0cd0046b",
+        "android_client_info": {
+          "package_name": "com.aeroponics.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655421562098-djfq2s5i7pbeuncf59lm5qnc3no8qu8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsBDKqMtCRbFVHT91-Hw1lFqutpSAW030"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655421562098-djfq2s5i7pbeuncf59lm5qnc3no8qu8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

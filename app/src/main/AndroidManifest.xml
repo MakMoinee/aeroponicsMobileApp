@@ -40,6 +40,11 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AeroponicsMobileApp.NoActionBar" />
+        <activity
+            android:name=".activities.GoogleSigninActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AeroponicsMobileApp.NoActionBar" />
     </application>
 
 </manifest>
